@@ -1,6 +1,6 @@
 # nvim.lazy
 
-This is my configuration of nvim, using the packagemanager `lazy`.
+This is my configuration of nvim, using the package manager `lazy`.
 
 Basically it is a setup for the `rust` programming language, but it supports also Lua, JavaScript 
 and TypeScript.
@@ -17,7 +17,7 @@ In order to successful install this setup the following tools must be installed:
 * rg - ripgrep
 
 ### Treesitter
-* A compile for C
+* A compiler for C
 * cmake
 
 ### LSPs
