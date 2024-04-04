@@ -41,6 +41,9 @@ vim.opt.shellslash = false           -- bool: Allows to use '/' instead of '\'
 -- [[ Clipboard ]]
 vim.opt.clipboard = "unnamedplus"    -- Using the system clipboard to make cut&paste between apps work.
 
+-- [[ Terminal ]]
+-- vim.opt.shell = "nu"              -- Using this breaks the rust plugin, as this expect to work with a sh/bash
+
 -- [[ Completion ]]
 -- Set completeopt to have a better completion experience
 -- :help completeopt
