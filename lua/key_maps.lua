@@ -6,3 +6,6 @@ vim.keymap.set('i', '<C-g>', '<Plug>(copilot-next)', { desc = 'Next Copilot sugg
 vim.keymap.set('i', '<C-f>', '<Plug>(copilot-previous)', { desc = 'Previous Copilot suggestion' })
 vim.keymap.set('i', '<C-l>', '<Plug>(copilot-accept-word)', { desc = 'Accept Copilot word' })
 vim.keymap.set('i', '<C-j>', '<Plug>(copilot-accept)', { desc = 'Accept Copilot suggestion' })
+
+map("n", "<leader><C-t>", ":vsplit term://nu<CR>", {})
+map("n", "<leader><S-t>", ":vsplit term://powershell.exe<CR>", {})
