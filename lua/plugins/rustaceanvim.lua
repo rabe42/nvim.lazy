@@ -1,7 +1,7 @@
 return {
 	"mrcjkb/rustaceanvim",
-	version = "^4", -- Recommended
-	ft = { "rust" },
+	version = "^6", -- Recommended
+    lazy = false,
 	config = function()
 	-- 	local bufnr = vim.api.nvim_get_current_buf()
 	-- 	vim.keymap.set(
@@ -20,16 +20,17 @@ return {
 					auto_focus = true,
 				},
             },
-	-- 		-- LSP configuration
-	-- 		server = {
-	-- 			on_attach = function(_, bufnr)
-	-- 				-- you can also put keymaps in here
-	-- 			end,
-	-- 			default_settings = {
-	-- 				-- rust-analyzer language server configuration
-	-- 				["rust-analyzer"] = {},
-	-- 			},
-	-- 		},
+			-- LSP configuration
+			server = {
+				on_attach = function(_, bufnr)
+					-- you can also put keymaps in here
+                    vim.lsp.inlay_hint.enable(true)
+				end,
+				default_settings = {
+					-- rust-analyzer language server configuration
+					["rust-analyzer"] = {},
+				},
+			},
 	-- 		-- DAP configuration
 	-- 		dap = {},
 		}

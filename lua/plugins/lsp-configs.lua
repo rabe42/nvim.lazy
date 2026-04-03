@@ -10,22 +10,32 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "tsserver" },
+				ensure_installed = { "lua_ls", "ts_ls" },
 			})
 		end,
 	},
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.tsserver.setup({
-				capabilities = capabilities,
-			})
+			-- local lspconfig = require("lspconfig")
+			-- lspconfig.lua_ls.setup({
+			--                 settings = {
+			--                     Lua = {
+			--                         diagnostics = {
+			--                             globals = { "vim" }
+			--                         }
+			--                     }
+			--                 },
+			-- 	capabilities = capabilities,
+			-- })
+			-- lspconfig.ts_ls.setup({
+			-- 	capabilities = capabilities,
+			-- })
+            -- lspconfig.powershell_es.setup{
+            --     bundle_path = "C:/Users/ralf/AppData/Local/nvim-data/mason/packages/powershell-editor-services"
+            -- } -- This shit isn't working at all!
 
 			local options = {}
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, options)

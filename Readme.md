@@ -7,7 +7,7 @@ and TypeScript.
 
 ## Preconditions
 
-In order to successful install this setup the following tools must be installed:
+To successful install this setup the following tools must be installed:
 
 ### Package Manager
 * git 
@@ -17,7 +17,7 @@ In order to successful install this setup the following tools must be installed:
 * rg - ripgrep
 
 ### Treesitter
-* A compiler for C
+* A compiler for C (e.g. zig, gcc, clang, msvc)
 * cmake
 
 ### LSPs
@@ -45,3 +45,4 @@ docker/podman on the WSL linux.
 If you are using Arch/Manjaro, consider the installation of podman before
 the installation of Manjaro. In this way the podman installation on Windows do not
 interfere with the podman installation in your Linux system.
+

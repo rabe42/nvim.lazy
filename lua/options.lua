@@ -36,7 +36,7 @@ vim.opt.splitbelow = true            -- bool: Place new window below the current
 vim.opt.autoindent = true
 
 -- [[ Slash ]]                        NOTE: breaks treesitter on Windows!
-vim.opt.shellslash = false           -- bool: Allows to use '/' instead of '\' 
+vim.opt.shellslash = true           -- bool: Allows to use '/' instead of '\' 
 
 -- [[ Clipboard ]]
 vim.opt.clipboard = "unnamedplus"    -- Using the system clipboard to make cut&paste between apps work.
