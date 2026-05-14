@@ -2,7 +2,7 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
     lazy = false,
-    branch = "master",
+    branch = "main",
     main = "nvim-treesitter.configs",
     opts = {
         -- ensure_installed = {"lua", "java", "javascript", "typescript", "rust"},
