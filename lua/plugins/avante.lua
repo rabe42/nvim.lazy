@@ -37,7 +37,7 @@ return {
         },
       },
       copilot = {
-        model = "claude-opus-4.6",
+        model = "claude-sonnet-4.6",
         -- model = "gpt-5",
         -- model = "gpt-4o",
         timeout = 30000, -- Timeout in milliseconds
