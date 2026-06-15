@@ -37,7 +37,7 @@ return {
         },
       },
       copilot = {
-        model = "claude-opus-4.5",
+        model = "claude-sonnet-4.6",
         -- model = "gpt-5",
         -- model = "gpt-4o",
         timeout = 30000, -- Timeout in milliseconds
@@ -59,7 +59,8 @@ return {
     "stevearc/dressing.nvim", -- for input provider dressing
     "folke/snacks.nvim", -- for input provider snacks
     "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-    "zbirenbaum/copilot.lua", -- for providers='copilot'
+    -- "zbirenbaum/copilot.lua", -- for providers='copilot'
+    "github/copilot.vim",
     {
       -- support for image pasting
       "HakonHarnes/img-clip.nvim",

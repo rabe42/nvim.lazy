@@ -54,7 +54,7 @@ vim.opt.clipboard = "unnamedplus"    -- Using the system clipboard to make cut&p
 -- updatetime: set updatetime for CursorHold
 vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
 vim.opt.shortmess = vim.opt.shortmess + { c = true}
-vim.api.nvim_set_option('updatetime', 300)
+vim.opt.updatetime = 300
 
 -- [[ Markdown ]]
 vim.cmd([[
@@ -64,5 +64,6 @@ augroup Markdown
     autocmd BufNewFile,BufRead *.md set spelllang=de,en
     autocmd BufNewFile,BufRead *.md set spellsuggest=best,9
     autocmd BufNewFile,BufRead *.md set spell!
+    autocmd BufNewFile,BufRead *.md set formatexpr=nil
 augroup END
 ]])
