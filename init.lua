@@ -18,7 +18,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+  git = {
+    timeout = 600, -- Increase timeout for compilation (in seconds)
+  },
+})
 
 -- vim.cmd.colorscheme 'solarized-osaka'
 -- vim.cmd.colorscheme 'bamboo-light'
