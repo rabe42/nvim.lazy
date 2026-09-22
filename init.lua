@@ -26,5 +26,5 @@ require("lazy").setup("plugins", {
 
 -- vim.cmd.colorscheme 'solarized-osaka'
 -- vim.cmd.colorscheme 'bamboo-light'
+vim.cmd.colorscheme 'tokyonight-day'
 
--- This seems to be the nvim native way to enable the inlay_hint of the lsp.
