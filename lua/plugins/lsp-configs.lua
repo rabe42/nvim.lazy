@@ -10,17 +10,22 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls" },
+				ensure_installed = { "clangd", "lua_ls", "ts_ls" },
 			})
 		end,
 	},
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			-- local lspconfig = require("lspconfig")
-			-- lspconfig.lua_ls.setup({
+			-- Minimal clangd setup: autostarts on c/c++ filetypes (ft/root_dir provided by nvim-lspconfig)
+			vim.lsp.config("clangd", {
+				capabilities = capabilities,
+			})
+			vim.lsp.enable("clangd")
+
+			-- vim.lsp.config("lua_ls", {
 			--                 settings = {
 			--                     Lua = {
 			--                         diagnostics = {
