@@ -8,6 +8,6 @@ return {
             -- transparent = true
             dim_inactive = true
 		})
-		require("bamboo").load()
+		-- require("bamboo").load()
 	end,
 }

@@ -26,5 +26,6 @@ require("lazy").setup("plugins", {
 
 -- vim.cmd.colorscheme 'solarized-osaka'
 -- vim.cmd.colorscheme 'bamboo-light'
-vim.cmd.colorscheme 'tokyonight-day'
+vim.cmd.colorscheme 'tokyonight-night'
+-- vim.cmd.colorscheme 'bamboo'
 
